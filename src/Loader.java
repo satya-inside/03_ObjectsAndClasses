@@ -58,7 +58,7 @@ public class Loader
         System.out.println(Cat.getCount());
 3 lesson */
 
-//3 lesson extra
+/* 3 lesson extra
         Cat cat8 = new Cat();
         Cat cat9 = new Cat();
         Cat cat10 = new Cat();
@@ -85,5 +85,10 @@ public class Loader
         cat10.pee();
         cat10.drink(15.0);
         System.out.println(cat10.getWeight());
+3 lesson extra */
+
+//4 lesson
+
+
     }
 }

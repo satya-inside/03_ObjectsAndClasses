@@ -1,6 +1,10 @@
 
 public class Cat
 {
+    public static final int EYE_COUNT = 2;
+    public static final int MINIMAL_Weight = 800;
+    public static final int MAXIMAL_Weight = 35000;
+
     static double count=0;
     private double originWeight;
     private double weight;
