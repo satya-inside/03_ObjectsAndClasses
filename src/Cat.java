@@ -6,6 +6,7 @@ public class Cat
 
     private double minWeight;
     private double maxWeight;
+    private double maxFood = 0.0;
 
     public Cat()
     {
@@ -24,8 +25,22 @@ public class Cat
 
     public void feed(Double amount)
     {
+        maxFood += amount;
         weight = weight + amount;
     }
+
+    public double food()
+    {
+        return maxFood;
+    }
+
+    public double pee()
+    {
+        weight = weight - 10;
+        System.out.println("Хозяин не смотри");
+        return weight;
+    }
+
 
     public void drink(Double amount)
     {

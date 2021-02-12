@@ -1,8 +1,9 @@
 
 public class Loader
 {
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
+/* 1 lesson
         Cat cat = new Cat();
         System.out.println(cat.getWeight());
         System.out.println(cat.getStatus());
@@ -28,6 +29,19 @@ public class Loader
             cat2.meow();
         }
         System.out.println("статус 2 кошки= "+cat2.getStatus());
+1 lesson */
+
+// 2 lesson
+        Cat cat4 = new Cat();
+        System.out.println("вес 4 кошки = " +cat4.getWeight());
+        cat4.feed(150.0);
+        for (int i = 1; i<5; i++){
+            cat4.pee();
+        }
+        System.out.println("кошка 2 съела = " +cat4.food());
+        System.out.println("вес 4 кошки = " +cat4.getWeight());
+
+
 
 
     }
