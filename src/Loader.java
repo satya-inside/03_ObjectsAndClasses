@@ -31,7 +31,7 @@ public class Loader
         System.out.println("статус 2 кошки= "+cat2.getStatus());
 1 lesson */
 
-// 2 lesson
+/* 2 lesson
         Cat cat4 = new Cat();
         System.out.println("вес 4 кошки = " +cat4.getWeight());
         cat4.feed(150.0);
@@ -40,8 +40,22 @@ public class Loader
         }
         System.out.println("кошка 2 съела = " +cat4.food());
         System.out.println("вес 4 кошки = " +cat4.getWeight());
+2 lesson */
 
+// 3 lesson
+        Cat cat5 = new Cat();
+        Cat cat6 = new Cat();
+        Cat cat7 = new Cat();
+        System.out.println(Cat.getCount());
+        while (!(cat5.getStatus()=="Dead")) {
+            cat5.meow();
+        }
+        System.out.println(Cat.getCount());
 
+        while (!(cat6.getStatus()=="Exploded")) {
+            cat6.feed(100.0);
+        }
+        System.out.println(Cat.getCount());
 
 
     }
