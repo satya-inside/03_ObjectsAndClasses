@@ -89,6 +89,21 @@ public class Loader
 
 //4 lesson
 
+// 5 lesson
+        Cat cat11 = new Cat(1500.0);
+        System.out.println(cat11.getWeight());
 
+        Cat cat12 = getKitten();
+        System.out.println("котенок 12 весит = "+cat12.getWeight());
+        Cat cat13 = getKitten();
+        System.out.println("котенок 13 весит = "+cat13.getWeight());
+        Cat cat14 = getKitten();
+        System.out.println("котенок 14 весит = "+cat14.getWeight());
+    }
+
+
+    private static Cat getKitten()
+    {
+        return new Cat (1100.0);
     }
 }

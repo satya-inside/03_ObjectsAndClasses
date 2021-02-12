@@ -27,6 +27,11 @@ public class Cat
 
     }
 
+    public Cat(double weight)
+    {
+        this.weight = weight;
+    }
+
     public static double getCount()
     {
         return count;
