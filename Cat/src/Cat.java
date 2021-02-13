@@ -13,7 +13,8 @@ public class Cat
     private double maxWeight;
     private double maxFood = 0.0;
 
-    private boolean death;
+    private boolean isdeath;
+    private Enum color;
 
 
     public Cat()
@@ -23,7 +24,7 @@ public class Cat
         minWeight = 1000.0;
         maxWeight = 9000.0;
         count = count + 1;
-        death = false;
+        isdeath = false;
 
     }
 
@@ -45,7 +46,7 @@ public class Cat
 
     public void feed(Double amount)
     {
-        if (death) System.out.println("Кошка неживая");
+        if (isdeath) System.out.println("Кошка неживая");
                 else {
             maxFood += amount;
             weight = weight + amount;
@@ -60,7 +61,7 @@ public class Cat
 
     public double pee()
     {
-        if (death) {
+        if (isdeath) {
             System.out.println("Кошка неживая");
             return weight;
         }
@@ -74,7 +75,7 @@ public class Cat
 
     public void drink(Double amount)
     {
-        if (death) {
+        if (isdeath) {
             System.out.println("Кошка неживая");
         }
         else {
@@ -90,13 +91,13 @@ public class Cat
     public String getStatus()
     {
         if(weight < minWeight) {
-            death = true;
+            isdeath = true;
             count = count - 1;
             return "Dead";
         }
         else if(weight > maxWeight) {
             count = count - 1;
-            death = true;
+            isdeath = true;
             return "Exploded";
         }
         else if(weight > originWeight) {
@@ -106,4 +107,18 @@ public class Cat
             return "Playing";
         }
     }
+
+    public void setColor(Enum getColor)
+    {
+        color=getColor;
+    }
+
+    public Enum getColor()
+    {
+        return color;
+    }
+
+
+
+
 }

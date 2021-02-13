@@ -109,9 +109,9 @@ public class Loader
 5 lesson*/
 
 // 6 lesson
-
-
-
+        Cat cat15 = new Cat();
+        cat15.setColor(Color.redhead);
+        System.out.println(cat15.getColor());
 
     }
 }
